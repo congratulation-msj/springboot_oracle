@@ -1,0 +1,15 @@
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+
+#oracle database jdbc
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@//localhost:1521/orcl
+    username: system
+    password: Ss123456
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    dbcp2:
+      max-idle: 10
+      max-wait-millis: 10000
+      min-idle: 5
+      initial-size: 5
